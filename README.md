@@ -19,12 +19,9 @@ Elasticsearch Çalışma Prensibi:
 
 Elasticsearch'te veri "indeks" adı verilen yapılarda saklanır.
 Bir indeks, birden fazla "belge" içerir.
-Belgeler (Documents):
 
 Elasticsearch'teki temel veri birimidir. JSON formatında saklanır.
 Örneğin, bir kitap bilgisi bir belgedir.
-json
-Kodu kopyala
 {
     "title": "1984",
     "author": "George Orwell",
@@ -39,8 +36,6 @@ Veriler, "shard" adı verilen parçalara bölünerek birden fazla düğüme dağ
 Sorgular:
 
 Elasticsearch, sorgular için Query DSL (Domain-Specific Language) adlı bir dil kullanır. Örneğin:
-json
-Kodu kopyala
 {
     "query": {
         "match": {
